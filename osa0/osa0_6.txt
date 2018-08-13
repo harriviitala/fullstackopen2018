@@ -1,0 +1,18 @@
+kayttaja->selain:
+note left of selain
+kayttaja kirjoittaa input-kenttään 
+ja painaa enter tai button
+end note
+selain->palvelin: POST fullstack-exampleapp.herokuapp.com/new_note_spa
+note left of palvelin
+  Pyyntö osoitteeseen new_note_spa 
+  - lisää JSON-muistiinpano
+  Content-type: application/json
+end note
+
+palvelin->selain: status 201, uusi resurssi luotu
+
+note left of selain
+ spa.js muokkaa DOMin
+end note
+
