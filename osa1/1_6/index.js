@@ -6,34 +6,29 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      hyva: 1,
-      neutraali: 1,
-      huono: 1
+      hyva: 0,
+      neutraali: 0,
+      huono: 0
     }
   }
 
-  klik1 = () => {
-    const stat1 = 0
+  klik1 = () => {    
     this.setState({
       hyva: this.state.hyva + 1
     })
   }
 
-  klik2 = () => {
-    const stat2 = 0
+  klik2 = () => {    
     this.setState({
       neutraali: this.state.neutraali + 1
     })
   }
 
-  klik3 = () => {
-    const stat3 = 0
+  klik3 = () => {    
     this.setState({
       huono: this.state.huono + 1
     })
   }
-
-  asetaArvoon = (arvo) => () => this.setState({ counter: arvo })
 
   render() {
     
