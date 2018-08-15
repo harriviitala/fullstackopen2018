@@ -40,7 +40,7 @@ const Sisalto = (props) => {
 const Yhteensa = (props) => {
    return (
     <div>
-      <p>{props.tehtavat}</p>
+      <p>{props.osat[0].tehtavia + props.osat[1].tehtavia + props.osat[2].tehtavia}</p>
     </div>
   )
 }
@@ -49,8 +49,8 @@ const Yhteensa = (props) => {
 return (
     <div>
       <Kurssi kurssinNimi={kurssi} />
-      <Sisalto osat={osat}  />    
-      <Yhteensa tehtavat={osat[0].tehtavia + osat[1].tehtavia + osat[2].tehtavia} />
+      <Sisalto osat={osat}  />
+      <Yhteensa osat={osat} />      
     </div>
   )
 }
