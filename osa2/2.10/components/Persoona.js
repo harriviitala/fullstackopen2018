@@ -1,6 +1,5 @@
 import React from 'react'
 
-//komponentti persoona listaa henkilöt
   const Persoona = ({persons}) => {  	
   return (
        persons.map(person =>
